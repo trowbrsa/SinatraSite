@@ -1,4 +1,8 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
-# gem "rails"
+require 'sinatra'
+
+group :development do
+	require 'pry'
+end
