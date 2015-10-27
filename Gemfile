@@ -1,8 +1,10 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
-require 'sinatra'
+ruby '2.2.3'
+
+gem 'sinatra'
 
 group :development do
-	require 'pry'
+	gem 'pry'
 end
