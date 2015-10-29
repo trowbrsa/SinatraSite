@@ -4,7 +4,7 @@
 
     <link href="css/style.css" rel="stylesheet">
 
-    <title>Home Page.</title>
+    <title>Home Page</title>
     <meta charset = "utf-8">
     </head>
 
@@ -40,16 +40,16 @@
         </figure>
       </article>
 
-      <h4><a href="file:///Users/Sarah/Ada/class-exs/HTML%20templates/blog.html/">Click here to check out my blog</a></h3>
+      <!-- <h4><a href="file:///Users/Sarah/Ada/class-exs/HTML%20templates/blog.html/">Click here to check out my blog</a></h3> -->
 
       <footer>
-          <p>
             Follow me on:
             <a href="http://twitter.com/SarahinSEA">Twitter</a>
             <a href="www.linkedin.com/in/SarahATrowbridge">LinkedIn</a>
-          </p>
+            <% t=Time.new %>
+            <p class="copyright"> &copy; <%= t.year%> </p>
       </footer>
-      
+
     </body>
 
 </html>
