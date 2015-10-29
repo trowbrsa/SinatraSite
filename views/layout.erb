@@ -3,18 +3,18 @@
     <head>
 
     <link href="css/style.css" rel="stylesheet">
-
-    <title>Home Page</title>
+    <title><%= @title %> | Sarah's Website</title>
     <meta charset = "utf-8">
     </head>
 
     <body>
-      <h1>Sarah's First Sinatra Site!</h1>
+      <h1><%= @title %></h1>
       <nav>
+          <a href="/index">Homepage</a>
           <a href="/projects">Projects</a>
           <a href="/blog">Blog</a>
       </nav>
-      
+
       <%= yield %>
 
       <footer>
