@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <title>Home Page</title>
+    <meta charset = "utf-8">
+    </head>
+
+    <body>
+      <h1>Sarah's First Sinatra Site!</h1>
+      <nav>
+          <a href="/projects">Projects</a>
+          <a href="/blog">Blog</a>
+      </nav>
+      
+      <%= yield %>
+
+      <footer>
+            Follow me on:
+            <a href="http://twitter.com/SarahinSEA">Twitter</a>
+            <a href="www.linkedin.com/in/SarahATrowbridge">LinkedIn</a>
+            <% t=Time.new %>
+            <p class="copyright"> &copy; <%= t.year%> </p>
+      </footer>
+
+    </body>
+
+</html>
