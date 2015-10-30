@@ -45,6 +45,17 @@ body {
   max-width: 960px;
 }
 
+	footer .links {
+		float: left;
+    padding-right: 5px;
+	}
+	footer .copyright {
+		float: right;
+	}
+	.clear {
+		clear: both;
+	}
+
 footer {
   padding: 5px 5px 5px 5px;
   background-color: rgb(213, 213, 213);
@@ -53,8 +64,9 @@ footer {
   border-radius: 5px;
 }
 
-footer p {
+footer span a{
   display: inline-block;
+  word-spacing: 5px;
 
 }
 

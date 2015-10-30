@@ -8,7 +8,7 @@
     </head>
 
     <body>
-      <h1><%= @title %></h1>
+      <h1><%= @h1 %></h1>
       <nav>
           <a href="/index">Homepage</a>
           <a href="/projects">Projects</a>
@@ -18,11 +18,12 @@
       <%= yield %>
 
       <footer>
-            Follow me on:
-            <a href="http://twitter.com/SarahinSEA">Twitter</a>
-            <a href="www.linkedin.com/in/SarahATrowbridge">LinkedIn</a>
-            <% t=Time.new %>
-            <p class="copyright"> &copy; <%= t.year%> </p>
+        <span class "links"><a href="/index">Home</a><a href="/projects">Projects</a><a href="/blog">Blog</a>
+      	<!-- <span class="links"><a href="http://twitter.com/SarahinSEA">Twitter</a><a href="www.linkedin.com/in/SarahATrowbridge">LinkedIn</a> -->
+        </span>
+        <% t=Time.new %>
+      	<span class="copyright"> &copy;<%= t.year%> </span>
+      	<div class="clear"></div>
       </footer>
 
     </body>

@@ -1,4 +1,5 @@
 require "sinatra"
+require "./seattle.rb"
 
 class MySite < Sinatra::Base
 
@@ -10,7 +11,7 @@ class MySite < Sinatra::Base
 
 
   get "/index" do
-    @title = 'My Homepage'
+    @title = 'Sarah Trowbridge'
     @h1 = "Sarah Trowbridge"
     erb :index
   end
@@ -24,6 +25,9 @@ class MySite < Sinatra::Base
   get "/blog" do
     @title = "Blog"
     @h1 = "Blog"
+    @activities1 = Activities::Seattle.all[rand(1..52)].options
+    @activities2 = Activities::Seattle.all[rand(1..52)].options
+    @activities3 = Activities::Seattle.all[rand(1..52)].options
     erb :blog
   end
 
