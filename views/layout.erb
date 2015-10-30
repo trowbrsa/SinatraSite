@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-
-    <link href="css/style.css" rel="stylesheet">
-    <title><%= @title %> | Sarah's Website</title>
-    <meta charset = "utf-8">
+      <link href="css/style.css" rel="stylesheet">
+      <title><%= @title %> | Sarah's Website</title>
+      <meta charset = "utf-8">
+      <link rel="shortcut icon" type="image/png" href="space_needle.png"/>
     </head>
 
     <body>
-
       <div class="SM_Links">
         <a href="http://twitter.com/SarahinSEA">
           <img src="twitter.png" alt="Link to Twitter profile"></a>
@@ -30,10 +29,8 @@
         <span class="links"><a href="/index">Home</a><a href="/projects">Projects</a><a href="/blog">Blog</a>
         </span>
         <% t=Time.new %>
-      	<span class="copyright"> &copy;<%= t.year%> </span>
+      	<span class="copyright">Sarah Trowbridge &copy;<%= t.year%></span>
       	<div class="clear"></div>
       </footer>
-
     </body>
-
 </html>

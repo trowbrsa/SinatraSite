@@ -5,7 +5,12 @@ class MySite < Sinatra::Base
 
 
   get "/" do
-    @navigation = {"Projects" => }
+    @navigation = {"Home" => "http://localhost:9292/index", "Projects" => "http://localhost:9292/projects", "Blog" => "http://localhost:9292/blog"}
+      @navigation.each do |page, link|
+        page, link
+      end
+      return @navigation
+    end
     @title = 'My Homepage'
     erb :index
   end
