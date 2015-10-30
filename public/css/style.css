@@ -1,10 +1,23 @@
+.SM_Links {
+  margin-top: 10px;
+  width: auto;
+  display: inline-block;
+}
+
+.SM_Links img {
+  width: 2%;
+  height: auto;
+  float: right;
+  padding: 2px;
+}
+
 nav a {
   font-size: 15px;
   text-decoration: none;
   margin: 10px 20px 100px 0;
   padding: 5px;
 }
-nav a:link {color: grey}
+nav a:link {color: rgb(35, 134, 129)}
 
 nav {
   border-style: solid;
@@ -16,7 +29,6 @@ nav {
   text-align: center;
   padding: 5px;
 }
-
 
 h1 {
   color: red;
@@ -45,12 +57,17 @@ body {
   max-width: 960px;
 }
 
-	footer .links {
+  footer .links {
 		float: left;
-    padding-right: 5px;
 	}
+
+  span .links {
+    text-align: center;
+  }
+
 	footer .copyright {
 		float: right;
+    margin-right: 10px;
 	}
 	.clear {
 		clear: both;
@@ -64,17 +81,15 @@ footer {
   border-radius: 5px;
 }
 
-footer span a{
-  display: inline-block;
-  word-spacing: 5px;
-
+.links a{
+  padding: 10px;
 }
 
-/*footer .copyright {
-  text-align: right;*/
-  /*float: right;*/
 
-/*}*/
+footer .copyright {
+  text-align: right;
+  float: right;
+}
 
 #intro {
   border-style: solid;

@@ -5,6 +5,7 @@ class MySite < Sinatra::Base
 
 
   get "/" do
+    @navigation = {"Projects" => }
     @title = 'My Homepage'
     erb :index
   end

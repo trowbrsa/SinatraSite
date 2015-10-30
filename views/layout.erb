@@ -8,7 +8,16 @@
     </head>
 
     <body>
+
+      <div class="SM_Links">
+        <a href="http://twitter.com/SarahinSEA">
+          <img src="twitter.png" alt="Link to Twitter profile"></a>
+        <a href="www.linkedin.com/in/SarahATrowbridge">
+          <img src="linkedin.png" alt="Link to LinkedIn profile"></a>
+      </div>
+
       <h1><%= @h1 %></h1>
+
       <nav>
           <a href="/index">Homepage</a>
           <a href="/projects">Projects</a>
@@ -18,8 +27,7 @@
       <%= yield %>
 
       <footer>
-        <span class "links"><a href="/index">Home</a><a href="/projects">Projects</a><a href="/blog">Blog</a>
-      	<!-- <span class="links"><a href="http://twitter.com/SarahinSEA">Twitter</a><a href="www.linkedin.com/in/SarahATrowbridge">LinkedIn</a> -->
+        <span class="links"><a href="/index">Home</a><a href="/projects">Projects</a><a href="/blog">Blog</a>
         </span>
         <% t=Time.new %>
       	<span class="copyright"> &copy;<%= t.year%> </span>
