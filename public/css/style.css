@@ -31,6 +31,7 @@ nav {
 }
 
 h1 {
+  font-family: 'Raleway', sans-serif;
   color: red;
   font-size: 30px;
   text-align: center;
@@ -53,24 +54,24 @@ h2 {
 }
 
 body {
+  font-family: 'Open Sans', sans-serif;
   color: #505151;
-  font-family: Helvetica;
   margin: auto;
   max-width: 960px;
 }
 
-  footer .links {
-		float: left;
-	}
+footer .links {
+	float: left;
+}
 
-  span .links {
-    text-align: center;
-  }
+span .links {
+  text-align: center;
+}
 
-	footer .copyright {
-		float: right;
-    margin-right: 10px;
-	}
+footer .copyright {
+	float: right;
+  margin-right: 10px;
+}
 	.clear {
 		clear: both;
 	}
@@ -109,13 +110,19 @@ p {
   margin-right: 8%;
 }
 
-a:link {color: black;}
+a:link {color: red; text-decoration: none;}
 a:visited {color: purple;}
 a:hover {font-weight: bold;}
 a:active {color: yellow;}
 
-  #cat {
-    margin: 0;
-    max-width: 200px;
-    max-height: 200px;
-  }
+#cat {
+  margin: 0;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.projects {
+  -webkit-filter: grayscale(100%);
+
+}
+.projects:hover {-webkit-filter: grayscale(0)}
